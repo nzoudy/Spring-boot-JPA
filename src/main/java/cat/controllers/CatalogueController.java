@@ -42,7 +42,7 @@ public class CatalogueController {
 	
 	@RequestMapping("/produitsParMC")
 	public Page<Produit> getProduits(String mc, int page){
-		return produitRepository.produitParMC("%"+mc+"%", new PageRequest(page, 2));
+		return produitRepository.produitParMC("%"+mc+"%", new PageRequest(page, 5));
 	}
 	
 	@RequestMapping("/get")
